@@ -74,7 +74,7 @@ public class TweetAPISarker extends TwitterAPIClient {
     }
 
 
-    //Denys
+
     public ValidatableResponse lookUpUsers(String user_id) {
         return given().auth().oauth(this.apiKey, this.apiSecretKey, this.accessToken, this.accessTokenSecret)
                 .queryParam("user_id", user_id)
